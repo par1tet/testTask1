@@ -81,6 +81,56 @@ html, body {
 .main__form_email {
   display: flex;
   flex-direction: column;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.main__form_email > input {
+  width: 297px;
+  height: 15px;
+  padding: 15px 10px;
+  border: 0;
+  border-radius: 28px;
+}
+
+.main__form_password {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.main__form_password > input {
+  width: 297px;
+  height: 15px;
+  padding: 15px 10px;
+  border: 0;
+  border-radius: 28px;
+}
+
+.main__form_signin {
+  border-radius: 78px;
+  margin-top: 10px;
+  border: 0px;
+  background-color: black;
+  color: white;
+  transition: 360ms;
+  width: 312px;
+  height: 50px;
+}
+
+.main__form_signin:hover {
+  background-color: #FBC400;
+  color: black;
+  cursor: pointer;
+}
+
+.main__form_forgot {
+  margin-top: 20px;
+  font-weight: 700;
+  color: black;
 }
 
 /*# sourceMappingURL=main.css.map */
