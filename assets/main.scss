@@ -95,6 +95,8 @@ html,body {
     height: 15px;
     padding: 15px 10px;
 
+    background-color: rgb(255, 255, 255);
+
     border: 0;
     border-radius: 28px;
 }
@@ -113,6 +115,10 @@ html,body {
     @include main__form_input();
 }
 
+.main__form_email > input:focus {
+    outline: 0px;
+}
+
 .main__form_password {
     display: flex;
     flex-direction: column;
@@ -123,8 +129,33 @@ html,body {
     margin-top: 20px;
 }
 
-.main__form_password > input {
+.main__form_password > div > input {
     @include main__form_input();
+    width: 280px;
+}
+
+.main__form_password > div > button:hover {
+    cursor: pointer;
+}
+
+.main__form_password > div > input:focus {
+    outline: 0px;
+}
+
+.main__form_password_changeview {
+    border: 0px;
+    width: 18px;
+    height: 13px;
+}
+
+.dont-view {
+    background-image: url('img/dontview.png');
+}
+
+.view {
+    background-image: url("img/view.png");
+    width: 18px;
+    height: 18px;
 }
 
 .main__form_signin {
