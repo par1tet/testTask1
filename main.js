@@ -1,5 +1,6 @@
 const passwordInput = document.querySelector("#password-input")
 const changeView = document.querySelector("#change-view")
+const iconsSocial = document.querySelectorAll(".main__form_social > img")
 
 function handleClick(e){
     if(e.target.classList.contains('dont-view')){
@@ -13,4 +14,17 @@ function handleClick(e){
     }
 }
 
+function handleMouseOver(e){
+    e.target.setAttribute('src', `${e.target.getAttribute('src').slice(0,-4)}-hover.svg`)
+}
+
+function handleMouseOut(e){
+    e.target.setAttribute('src', `${e.target.getAttribute('src').slice(0,-10)}.svg`)
+}
+
 changeView.addEventListener("click", handleClick)
+
+for(let i = 0;i !== iconsSocial.length;i++){
+    iconsSocial[i].addEventListener("mouseover", handleMouseOver)
+    iconsSocial[i].addEventListener("mouseout", handleMouseOut)
+}

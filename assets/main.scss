@@ -69,6 +69,10 @@ html,body {
     margin-top: 20px
 }
 
+.main__form_social > img {
+    cursor: pointer;
+}
+
 .main__form_or {
     display: flex;
     justify-content: center;
@@ -116,7 +120,7 @@ html,body {
 }
 
 .main__form_email > input:focus {
-    outline: 0px;
+    outline: 1px solid black;
 }
 
 .main__form_password {
@@ -129,6 +133,13 @@ html,body {
     margin-top: 20px;
 }
 
+.main__form_password > div {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
 .main__form_password > div > input {
     @include main__form_input();
     width: 280px;
@@ -139,23 +150,33 @@ html,body {
 }
 
 .main__form_password > div > input:focus {
-    outline: 0px;
+    outline: 1px solid black;
 }
 
 .main__form_password_changeview {
+    display: flex;
+
+    background-repeat:no-repeat;
+
+    cursor: pointer;
+
     border: 0px;
     width: 18px;
-    height: 13px;
+    height: 18px;
 }
 
 .dont-view {
-    background-image: url('img/dontview.png');
+    background-image: url('img/dontview.svg');
+    // box-sizing: border-box;
+
+    margin-top:3px;
+    margin-bottom:2px;
+    height: 13px;
+
 }
 
 .view {
-    background-image: url("img/view.png");
-    width: 18px;
-    height: 18px;
+    background-image: url("img/view.svg");
 }
 
 .main__form_signin {
