@@ -1,6 +1,6 @@
 const passwordInput = document.querySelector("#password-input")
 const changeView = document.querySelector("#change-view")
-const iconsSocial = document.querySelectorAll(".main__form_social > img")
+const iconsSocial = document.querySelectorAll(".main__form-social > img")
 
 function handleClick(e){
     if(e.target.classList.contains('dont-view')){

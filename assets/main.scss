@@ -61,7 +61,7 @@ html,body {
     font-weight: 400;
 }
 
-.main__form_social {
+.main__form-social {
     display: flex;
 
     gap:11px;
@@ -70,6 +70,7 @@ html,body {
 }
 
 .main__form-social > img {
+    transition: all 200ms;
     cursor: pointer;
 }
 
