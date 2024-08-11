@@ -95,9 +95,9 @@ html,body {
 }
 
 @mixin main__form-input() {
-    width: 297px;
+    width: 287px;
     height: 15px;
-    padding: 15px 10px;
+    padding: 10px 15px;
 
     background-color: rgb(255, 255, 255);
 
@@ -143,8 +143,6 @@ html,body {
 .main__form-password > div > input {
     @include main__form_input();
     z-index: 1;
-
-    width: 297px;
 }
 
 .main__form-password > div > button:hover {
@@ -166,7 +164,7 @@ html,body {
     z-index: 2;
     margin-left: -18px;
 
-    right: 20px;
+    right: 14px;
     border: 0px;
     width: 18px;
     height: 18px;
